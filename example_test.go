@@ -85,348 +85,348 @@ func ExampleParse() {
 	fmt.Println(string(b))
 	// Output:
 	// {
-	//   "Pages": [
+	//   "pages": [
 	//     {
-	//       "Title": "PAGE 1",
-	//       "IsSpread": false,
-	//       "Panels": [
+	//       "title": "PAGE 1",
+	//       "is_spread": false,
+	//       "panels": [
 	//         {
-	//           "Id": "1.1",
-	//           "Items": [
+	//           "id": "1.1",
+	//           "items": [
 	//             {
-	//               "Type": "text",
-	//               "Source": "Contract Text",
-	//               "Style": "",
-	//               "Content": " The undersigned* agrees to sell his soul** for a thousand berries.**"
+	//               "type": "text",
+	//               "source": "Contract Text",
+	//               "style": "",
+	//               "content": " The undersigned* agrees to sell his soul** for a thousand berries.**"
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Sign",
-	//               "Style": "",
-	//               "Content": "Menu:\n- Pizza: 50 Yen\n- Okonomiyaki: 100 Yen\n- Beer: 200 Yen\n"
+	//               "type": "text",
+	//               "source": "Sign",
+	//               "style": "",
+	//               "content": "Menu:\n- Pizza: 50 Yen\n- Okonomiyaki: 100 Yen\n- Beer: 200 Yen\n"
 	//             }
 	//           ]
 	//         },
 	//         {
-	//           "Id": "1.2",
-	//           "Items": [
+	//           "id": "1.2",
+	//           "items": [
 	//             {
-	//               "Type": "text",
-	//               "Source": "Menelaus",
-	//               "Style": "Announcing",
-	//               "Content": "Here in the mountains of Japan…"
+	//               "type": "text",
+	//               "source": "Menelaus",
+	//               "style": "Announcing",
+	//               "content": "Here in the mountains of Japan…"
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Menelaus",
-	//               "Style": "Announcing",
-	//               "Content": "…There is a steel cage made for one purpose."
+	//               "type": "text",
+	//               "source": "Menelaus",
+	//               "style": "Announcing",
+	//               "content": "…There is a steel cage made for one purpose."
 	//             }
 	//           ]
 	//         },
 	//         {
-	//           "Id": "1.3",
-	//           "Items": null
+	//           "id": "1.3",
+	//           "items": null
 	//         },
 	//         {
-	//           "Id": "1.4",
-	//           "Items": [
+	//           "id": "1.4",
+	//           "items": [
 	//             {
-	//               "Type": "text",
-	//               "Source": "Menelaus",
-	//               "Style": "Announcing",
-	//               "Content": ""
+	//               "type": "text",
+	//               "source": "Menelaus",
+	//               "style": "Announcing",
+	//               "content": ""
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Menelaus",
-	//               "Style": "Announcing",
-	//               "Content": ""
+	//               "type": "text",
+	//               "source": "Menelaus",
+	//               "style": "Announcing",
+	//               "content": ""
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Title",
-	//               "Style": "",
-	//               "Content": "Moriking"
+	//               "type": "text",
+	//               "source": "Title",
+	//               "style": "",
+	//               "content": "Moriking"
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Chapter Title",
-	//               "Style": "",
-	//               "Content": "Chapter 31: Giant Asian Hornet vs. Palawan Stag Beetle"
+	//               "type": "text",
+	//               "source": "Chapter Title",
+	//               "style": "",
+	//               "content": "Chapter 31: Giant Asian Hornet vs. Palawan Stag Beetle"
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Shoko",
-	//               "Style": "Shadowed",
-	//               "Content": "?!"
+	//               "type": "text",
+	//               "source": "Shoko",
+	//               "style": "Shadowed",
+	//               "content": "?!"
 	//             }
 	//           ]
 	//         },
 	//         {
-	//           "Id": "1.5",
-	//           "Items": [
+	//           "id": "1.5",
+	//           "items": [
 	//             {
-	//               "Type": "soundEffect",
-	//               "Name": "gasp ",
-	//               "Transliteration": "(ha"
+	//               "type": "soundEffect",
+	//               "name": "gasp ",
+	//               "transliteration": "(ha"
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Shota",
-	//               "Style": "Sharp",
-	//               "Content": "A _death match?!?_ The invitation said it was gonna be arm wrestling...!"
+	//               "type": "text",
+	//               "source": "Shota",
+	//               "style": "Sharp",
+	//               "content": "A _death match?!?_ The invitation said it was gonna be arm wrestling...!"
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Menelaus",
-	//               "Style": "Announcing",
-	//               "Content": "It was changed at the last minute..."
+	//               "type": "text",
+	//               "source": "Menelaus",
+	//               "style": "Announcing",
+	//               "content": "It was changed at the last minute..."
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Menelaus",
-	//               "Style": "Announcing",
-	//               "Content": "...at the strong insistence of the seeded contestant."
+	//               "type": "text",
+	//               "source": "Menelaus",
+	//               "style": "Announcing",
+	//               "content": "...at the strong insistence of the seeded contestant."
 	//             }
 	//           ]
 	//         },
 	//         {
-	//           "Id": "1.6",
-	//           "Items": [
+	//           "id": "1.6",
+	//           "items": [
 	//             {
-	//               "Type": "text",
-	//               "Source": "Palawan",
-	//               "Style": "Serious",
-	//               "Content": "I have no interest in such **pathetic games.**"
+	//               "type": "text",
+	//               "source": "Palawan",
+	//               "style": "Serious",
+	//               "content": "I have no interest in such **pathetic games.**"
 	//             }
 	//           ]
 	//         }
 	//       ]
 	//     },
 	//     {
-	//       "Title": "PAGE 2",
-	//       "IsSpread": false,
-	//       "Panels": [
+	//       "title": "PAGE 2",
+	//       "is_spread": false,
+	//       "panels": [
 	//         {
-	//           "Id": "2.1",
-	//           "Items": [
+	//           "id": "2.1",
+	//           "items": [
 	//             {
-	//               "Type": "text",
-	//               "Source": "Palawan",
-	//               "Style": "Serious",
-	//               "Content": "The only creatures with any right to live..."
+	//               "type": "text",
+	//               "source": "Palawan",
+	//               "style": "Serious",
+	//               "content": "The only creatures with any right to live..."
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Palawan",
-	//               "Style": "Serious",
-	//               "Content": "...are those with the beauty of strength."
+	//               "type": "text",
+	//               "source": "Palawan",
+	//               "style": "Serious",
+	//               "content": "...are those with the beauty of strength."
 	//             },
 	//             {
-	//               "Type": "soundEffect",
-	//               "Name": "ha ha ha",
-	//               "Transliteration": ""
+	//               "type": "soundEffect",
+	//               "name": "ha ha ha",
+	//               "transliteration": ""
 	//             }
 	//           ]
 	//         },
 	//         {
-	//           "Id": "2.2",
-	//           "Items": [
+	//           "id": "2.2",
+	//           "items": [
 	//             {
-	//               "Type": "text",
-	//               "Source": "Shota",
-	//               "Style": "Scared",
-	//               "Content": "The Palawan..."
+	//               "type": "text",
+	//               "source": "Shota",
+	//               "style": "Scared",
+	//               "content": "The Palawan..."
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Shota",
-	//               "Style": "Scared",
-	//               "Content": "...Stag Beetle..."
+	//               "type": "text",
+	//               "source": "Shota",
+	//               "style": "Scared",
+	//               "content": "...Stag Beetle..."
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Shoko",
-	//               "Style": "Bold",
-	//               "Content": "The what now?"
+	//               "type": "text",
+	//               "source": "Shoko",
+	//               "style": "Bold",
+	//               "content": "The what now?"
 	//             }
 	//           ]
 	//         },
 	//         {
-	//           "Id": "2.3",
-	//           "Items": [
+	//           "id": "2.3",
+	//           "items": [
 	//             {
-	//               "Type": "text",
-	//               "Source": "Shota",
-	//               "Style": "Sharp",
-	//               "Content": "A giant stag beetle that lives on the Palawan archipelago in the Philippines!!"
+	//               "type": "text",
+	//               "source": "Shota",
+	//               "style": "Sharp",
+	//               "content": "A giant stag beetle that lives on the Palawan archipelago in the Philippines!!"
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Shota",
-	//               "Style": "Sharp",
-	//               "Content": "With its overwhelming prowess in battle, it's said to be the strongest stag beetle on the planet!!"
+	//               "type": "text",
+	//               "source": "Shota",
+	//               "style": "Sharp",
+	//               "content": "With its overwhelming prowess in battle, it's said to be the strongest stag beetle on the planet!!"
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Shoko",
-	//               "Style": "Thought",
-	//               "Content": "Okay, so it's another cool bug, got it."
+	//               "type": "text",
+	//               "source": "Shoko",
+	//               "style": "Thought",
+	//               "content": "Okay, so it's another cool bug, got it."
 	//             }
 	//           ]
 	//         }
 	//       ]
 	//     },
 	//     {
-	//       "Title": "PAGE 3",
-	//       "IsSpread": false,
-	//       "Panels": [
+	//       "title": "PAGE 3",
+	//       "is_spread": false,
+	//       "panels": [
 	//         {
-	//           "Id": "3.1",
-	//           "Items": [
+	//           "id": "3.1",
+	//           "items": [
 	//             {
-	//               "Type": "text",
-	//               "Source": "Palawan",
-	//               "Style": "Serious",
-	//               "Content": "You all disgust me."
+	//               "type": "text",
+	//               "source": "Palawan",
+	//               "style": "Serious",
+	//               "content": "You all disgust me."
 	//             }
 	//           ]
 	//         },
 	//         {
-	//           "Id": "3.2",
-	//           "Items": [
+	//           "id": "3.2",
+	//           "items": [
 	//             {
-	//               "Type": "text",
-	//               "Source": "Palawan",
-	//               "Style": "",
-	//               "Content": "It is we Insecters who are the rightful masters of all life."
+	//               "type": "text",
+	//               "source": "Palawan",
+	//               "style": "",
+	//               "content": "It is we Insecters who are the rightful masters of all life."
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Palawan",
-	//               "Style": "",
-	//               "Content": "And only the most powerful among us..."
+	//               "type": "text",
+	//               "source": "Palawan",
+	//               "style": "",
+	//               "content": "And only the most powerful among us..."
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Palawan",
-	//               "Style": "",
-	//               "Content": "...is fit to rule the planet."
+	//               "type": "text",
+	//               "source": "Palawan",
+	//               "style": "",
+	//               "content": "...is fit to rule the planet."
 	//             }
 	//           ]
 	//         },
 	//         {
-	//           "Id": "3.3",
-	//           "Items": [
+	//           "id": "3.3",
+	//           "items": [
 	//             {
-	//               "Type": "text",
-	//               "Source": "Palawan",
-	//               "Style": "",
-	//               "Content": "Filthy pests and minor species from irrelevant islands..."
+	//               "type": "text",
+	//               "source": "Palawan",
+	//               "style": "",
+	//               "content": "Filthy pests and minor species from irrelevant islands..."
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Palawan",
-	//               "Style": "",
-	//               "Content": "My world has no need for such trash."
+	//               "type": "text",
+	//               "source": "Palawan",
+	//               "style": "",
+	//               "content": "My world has no need for such trash."
 	//             }
 	//           ]
 	//         },
 	//         {
-	//           "Id": "3.4",
-	//           "Items": [
+	//           "id": "3.4",
+	//           "items": [
 	//             {
-	//               "Type": "text",
-	//               "Source": "Palawan",
-	//               "Style": "",
-	//               "Content": "Send out your champion..."
+	//               "type": "text",
+	//               "source": "Palawan",
+	//               "style": "",
+	//               "content": "Send out your champion..."
 	//             },
 	//             {
-	//               "Type": "soundEffect",
-	//               "Name": "glare ",
-	//               "Transliteration": "(jii"
+	//               "type": "soundEffect",
+	//               "name": "glare ",
+	//               "transliteration": "(jii"
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Palawan",
-	//               "Style": "",
-	//               "Content": "...and I will end them."
+	//               "type": "text",
+	//               "source": "Palawan",
+	//               "style": "",
+	//               "content": "...and I will end them."
 	//             }
 	//           ]
 	//         },
 	//         {
-	//           "Id": "3.5",
-	//           "Items": [
+	//           "id": "3.5",
+	//           "items": [
 	//             {
-	//               "Type": "text",
-	//               "Source": "Shota",
-	//               "Style": "",
-	//               "Content": "What should we do? The only other battle to the death we did was with..."
+	//               "type": "text",
+	//               "source": "Shota",
+	//               "style": "",
+	//               "content": "What should we do? The only other battle to the death we did was with..."
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Shoko",
-	//               "Style": "",
-	//               "Content": "Huh? Speaking of which, where's Oga?"
+	//               "type": "text",
+	//               "source": "Shoko",
+	//               "style": "",
+	//               "content": "Huh? Speaking of which, where's Oga?"
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Ko",
-	//               "Style": "Bold",
-	//               "Content": "Actually, I haven't seen him for a few days...!"
+	//               "type": "text",
+	//               "source": "Ko",
+	//               "style": "Bold",
+	//               "content": "Actually, I haven't seen him for a few days...!"
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Shoko",
-	//               "Style": "",
-	//               "Content": "Yeah, he wasn't here for round two, either. Weird."
+	//               "type": "text",
+	//               "source": "Shoko",
+	//               "style": "",
+	//               "content": "Yeah, he wasn't here for round two, either. Weird."
 	//             }
 	//           ]
 	//         },
 	//         {
-	//           "Id": "3.6",
-	//           "Items": [
+	//           "id": "3.6",
+	//           "items": [
 	//             {
-	//               "Type": "text",
-	//               "Source": "Oki",
-	//               "Style": "",
-	//               "Content": "Ha ha ha, guess he got freaked out and split!"
+	//               "type": "text",
+	//               "source": "Oki",
+	//               "style": "",
+	//               "content": "Ha ha ha, guess he got freaked out and split!"
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Oki",
-	//               "Style": "",
-	//               "Content": "That's okay, I got this one!"
+	//               "type": "text",
+	//               "source": "Oki",
+	//               "style": "",
+	//               "content": "That's okay, I got this one!"
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Shoko",
-	//               "Style": "Thought",
-	//               "Content": "Wait, didn't Oki only get his butt whacked?"
+	//               "type": "text",
+	//               "source": "Shoko",
+	//               "style": "Thought",
+	//               "content": "Wait, didn't Oki only get his butt whacked?"
 	//             }
 	//           ]
 	//         },
 	//         {
-	//           "Id": "3.7",
-	//           "Items": [
+	//           "id": "3.7",
+	//           "items": [
 	//             {
-	//               "Type": "text",
-	//               "Source": "Moriking",
-	//               "Style": "",
-	//               "Content": "I will face him."
+	//               "type": "text",
+	//               "source": "Moriking",
+	//               "style": "",
+	//               "content": "I will face him."
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Shoko",
-	//               "Style": "Bold",
-	//               "Content": "Mori--!"
+	//               "type": "text",
+	//               "source": "Shoko",
+	//               "style": "Bold",
+	//               "content": "Mori--!"
 	//             },
 	//             {
-	//               "Type": "text",
-	//               "Source": "Meo",
-	//               "Style": "Bold",
-	//               "Content": "Hold up."
+	//               "type": "text",
+	//               "source": "Meo",
+	//               "style": "Bold",
+	//               "content": "Hold up."
 	//             }
 	//           ]
 	//         }
@@ -434,5 +434,4 @@ func ExampleParse() {
 	//     }
 	//   ]
 	// }
-
 }

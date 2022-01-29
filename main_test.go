@@ -23,7 +23,7 @@ func TestParse(t *testing.T) {
 			args{
 				strings.NewReader(""),
 			},
-			`{"Pages":[]}`,
+			`{"pages":[]}`,
 			false,
 		},
 	}

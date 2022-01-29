@@ -23,30 +23,33 @@ const (
 type ItemType string
 
 const (
-	TextLineItemType    = "text"
-	SideNoteItemType    = "sideNote"
+	// TextLineItemType is the type for a TextLine
+	TextLineItemType = "text"
+	// SideNoteItemType is the type for a SideNote
+	SideNoteItemType = "sideNote"
+	// SoundEffectItemType is the type for a SoundEffect
 	SoundEffectItemType = "soundEffect"
 )
 
 // TextLine is a text line item
 type TextLine struct {
-	Type    ItemType
-	Source  string
-	Style   string
-	Content string
+	Type    ItemType `json:"type"`
+	Source  string   `json:"source"`
+	Style   string   `json:"style"`
+	Content string   `json:"content"`
 }
 
 // SideNote is a side note item used for comments
 type SideNote struct {
-	Type    ItemType
-	Content string
+	Type    ItemType `json:"type"`
+	Content string   `json:"content"`
 }
 
 // SoundEffect contains sound effect definition
 type SoundEffect struct {
-	Type            ItemType
-	Name            string
-	Transliteration string
+	Type            ItemType `json:"type"`
+	Name            string   `json:"name"`
+	Transliteration string   `json:"transliteration"`
 }
 
 // Items contains list of items per panel
@@ -54,20 +57,20 @@ type Items = []interface{}
 
 // Panel contains comics panel items
 type Panel struct {
-	Id    string
-	Items Items
+	ID    string `json:"id"`
+	Items Items  `json:"items"`
 }
 
 // Page is a comic page containing one or more panels
-type Page struct { // #
-	Title    string
-	IsSpread bool     // ##
-	Panels   []*Panel // -
+type Page struct {
+	Title    string   `json:"title"`
+	IsSpread bool     `json:"is_spread"`
+	Panels   []*Panel `json:"panels"`
 }
 
-// Page is the whole script
+// Script is the whole script
 type Script struct {
-	Pages []*Page //Page
+	Pages []*Page `json:"pages"`
 }
 
 // Parse parses the input stream and returns script or error
@@ -104,7 +107,7 @@ func Parse(io io.Reader) (*Script, error) {
 		if strings.HasPrefix(line, panelPrefix) {
 			id := strings.TrimSpace(trimmedLine[1:])
 			panel = &Panel{
-				Id: id,
+				ID: id,
 			}
 			page.Panels = append(page.Panels, panel)
 			continue
