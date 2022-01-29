@@ -1,3 +1,4 @@
+// Package serifu contains parser for the serfu markup language
 package serifu
 
 import (
