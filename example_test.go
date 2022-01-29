@@ -11,13 +11,6 @@ import (
 const spec = `
 # PAGE 1
 - 1.1
-Contract Text:/= The undersigned* agrees to sell his soul** for a thousand berries.***=/
-Sign:/=
-Menu:
-- Pizza: 50 Yen
-- Okonomiyaki: 100 Yen
-- Beer: 200 Yen
-=/
 - 1.2
 Menelaus/Announcing: Here in the mountains of Japan…
 Menelaus/Announcing: …There is a steel cage made for one purpose.
@@ -78,6 +71,14 @@ Shoko/Thought: Wait, didn't Oki only get his butt whacked?
 Moriking: I will face him.
 Shoko/Bold: Mori--!
 Meo/Bold: Hold up.
+- 3.8
+Contract Text:/= The undersigned* agrees to sell his soul** for a thousand berries.***=/
+Sign:/=
+Menu:
+- Pizza: 50 Yen
+- Okonomiyaki: 100 Yen
+- Beer: 200 Yen
+=/
 `
 
 func ExampleParse() {
@@ -96,22 +97,7 @@ func ExampleParse() {
 	//       "panels": [
 	//         {
 	//           "id": "1.1",
-	//           "items": [
-	//             {
-	//               "type": "text",
-	//               "source": "Contract Text",
-	//               "style": "",
-	//               "is_pre_formatted": true,
-	//               "content": " The undersigned* agrees to sell his soul** for a thousand berries.**"
-	//             },
-	//             {
-	//               "type": "text",
-	//               "source": "Sign",
-	//               "style": "",
-	//               "is_pre_formatted": true,
-	//               "content": "Menu:\n- Pizza: 50 Yen\n- Okonomiyaki: 100 Yen\n- Beer: 200 Yen\n"
-	//             }
-	//           ]
+	//           "items": null
 	//         },
 	//         {
 	//           "id": "1.2",
@@ -476,6 +462,25 @@ func ExampleParse() {
 	//               "content": "Hold up."
 	//             }
 	//           ]
+	//         },
+	//         {
+	//           "id": "3.8",
+	//           "items": [
+	//             {
+	//               "type": "text",
+	//               "source": "Contract Text",
+	//               "style": "",
+	//               "is_pre_formatted": true,
+	//               "content": " The undersigned* agrees to sell his soul** for a thousand berries.**"
+	//             },
+	//             {
+	//               "type": "text",
+	//               "source": "Sign",
+	//               "style": "",
+	//               "is_pre_formatted": true,
+	//               "content": "Menu:\n- Pizza: 50 Yen\n- Okonomiyaki: 100 Yen\n- Beer: 200 Yen\n"
+	//             }
+	//           ]
 	//         }
 	//       ]
 	//     }
@@ -493,13 +498,7 @@ func ExampleScript_String() {
 	// Output:
 	// # PAGE 1
 	//     - 1.1
-	//     Contract Text:/= The undersigned* agrees to sell his soul** for a thousand berries.**=/
-	//     Sign:/=Menu:
-	// - Pizza: 50 Yen
-	// - Okonomiyaki: 100 Yen
-	// - Beer: 200 Yen
-	// =/
-
+	//
 	//     - 1.2
 	//     Menelaus/Menelaus: Here in the mountains of Japan…
 	//     Menelaus/Menelaus: …There is a steel cage made for one purpose.
@@ -572,4 +571,13 @@ func ExampleScript_String() {
 	//     Moriking: I will face him.
 	//     Shoko/Shoko: Mori--!
 	//     Meo/Meo: Hold up.
+
+	//     - 3.8
+	//     Contract Text:/= The undersigned* agrees to sell his soul** for a thousand berries.**=/
+	//     Sign:/=Menu:
+	// - Pizza: 50 Yen
+	// - Okonomiyaki: 100 Yen
+	// - Beer: 200 Yen
+	// =/
+
 }
