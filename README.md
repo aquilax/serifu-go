@@ -1,4 +1,4 @@
-# serifu-go
+# serifu-go [![Go Reference](https://pkg.go.dev/badge/github.com/aquilax/serifu-go.svg)](https://pkg.go.dev/github.com/aquilax/serifu-go)
 
 Go parser for the Serifu markup language
 
