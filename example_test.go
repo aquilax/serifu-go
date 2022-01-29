@@ -483,7 +483,7 @@ func ExampleParse() {
 	// }
 }
 
-func ExampleParseString() {
+func ExampleScript_String() {
 	got, err := serifu.Parse(strings.NewReader(spec))
 	if err != nil {
 		fmt.Println(err)
@@ -503,71 +503,71 @@ func ExampleParseString() {
 	//     - 1.2
 	//     Menelaus/Menelaus: Here in the mountains of Japan…
 	//     Menelaus/Menelaus: …There is a steel cage made for one purpose.
-
+	//
 	//     - 1.3
-
+	//
 	//     - 1.4
 	//     Menelaus/Menelaus:
 	//     Menelaus/Menelaus:
 	//     Title: Moriking
 	//     Chapter Title: Chapter 31: Giant Asian Hornet vs. Palawan Stag Beetle
 	//     Shoko/Shoko: ?!
-
+	//
 	//     - 1.5
 	//     * gasp (ha)
 	//     Shota/Shota: A _death match?!?_ The invitation said it was gonna be arm wrestling...!
 	//     Menelaus/Menelaus: It was changed at the last minute...
 	//     Menelaus/Menelaus: ...at the strong insistence of the seeded contestant.
-
+	//
 	//     - 1.6
 	//     Palawan/Palawan: I have no interest in such **pathetic games.**
-
+	//
 	// ## PAGE 2
 	//     - 2.1
 	//     Palawan/Palawan: The only creatures with any right to live...
 	//     Palawan/Palawan: ...are those with the beauty of strength.
 	//     * ha ha ha
-
+	//
 	//     - 2.2
 	//     Shota/Shota: The Palawan...
 	//     Shota/Shota: ...Stag Beetle...
 	//     Shoko/Shoko: The what now?
-
+	//
 	//     - 2.3
 	//     Shota/Shota: A giant stag beetle that lives on the Palawan archipelago in the Philippines!!
 	//     Shota/Shota: With its overwhelming prowess in battle, it's said to be the strongest stag beetle on the planet!!
 	//     Shoko/Shoko: Okay, so it's another cool bug, got it.
-
+	//
 	// # PAGE 3
 	//     - 3.1
 	//     Palawan/Palawan: You all disgust me.
 	//     ! he is not really serious
-
+	//
 	//     - 3.2
 	//     Palawan: It is we Insecters who are the rightful masters of all life.
 	//     Palawan: And only the most powerful among us...
 	//     Palawan: ...is fit to rule the planet.
-
+	//
 	//     - 3.3
 	//     Palawan: Filthy pests and minor species from irrelevant islands...
 	//     Palawan: My world has no need for such trash.
-
+	//
 	//     - 3.4
 	//     Palawan: Send out your champion...
 	//     * glare (jii)
 	//     Palawan: ...and I will end them.
-
+	//
 	//     - 3.5
 	//     Shota: What should we do? The only other battle to the death we did was with...
 	//     Shoko: Huh? Speaking of which, where's Oga?
 	//     Ko/Ko: Actually, I haven't seen him for a few days...!
 	//     Shoko: Yeah, he wasn't here for round two, either. Weird.
-
+	//
 	//     - 3.6
 	//     Oki: Ha ha ha, guess he got freaked out and split!
 	//     Oki: That's okay, I got this one!
 	//     Shoko/Shoko: Wait, didn't Oki only get his butt whacked?
-
+	//
 	//     - 3.7
 	//     Moriking: I will face him.
 	//     Shoko/Shoko: Mori--!
